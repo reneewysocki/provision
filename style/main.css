@@ -201,7 +201,13 @@ body {
     background-color: #333;
     color: #fff;
     text-transform: uppercase;
+    padding: 0px 16px;
 }
+
+.subscribe input {
+    height: 50px;
+}
+
 
 
 
@@ -267,3 +273,74 @@ body {
     margin-top: 16px;
 }
 
+/*--------------HOME PAGE SERVICES-----------*/
+
+.card-deck {
+    padding-top: 32px;
+}
+
+.card {
+    background-color: #707070;
+    color: white;
+    border: none;
+    min-height: 200px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-body a {
+    color: #00ff00;
+}
+
+.card-body a:hover {
+    color: #ffff00;
+    text-decoration: none;
+}
+
+/*---------------CONTACT FORM-------------------*/
+
+.contact-title {
+    font-weight: bold;
+    color: white;
+}
+
+#contact-form-wrap {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.form-row {
+    padding-top: 16px;
+}
+
+#contact-submit {
+    padding: 12px;
+    margin-top: 16px;
+    background-color: #00ff00;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+}
+
+#contact-submit:hover {
+    padding: 16px;
+    margin-top: 16px;
+    background-color: #ffff00;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+}
+
+.contact-list li {
+    margin-bottom: 32px;
+}
+
+.contact-list i {
+    margin-bottom: 8px;
+    color: #00ff00;
+}
