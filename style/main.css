@@ -45,7 +45,8 @@ body {
 }
 
 .flat-information > li > a:hover {
-	color: #00ff00;	
+    color: #00ff00;
+    text-decoration: none;	
 }
 
 .social-links {
@@ -175,9 +176,34 @@ body {
     margin-bottom: 16px;
 }
 
+.body-container h3 {
+    color: #fff;
+}
+
 .text-block {
    text-align: center; 
 }
+
+
+/*-------------------------------SUBSCRIBE-------------------------------------------*/
+
+.service-request {
+    background-color: #ffff00;
+    padding: 24px;
+}
+
+.subscribe{
+    padding-top: 16px;
+    width: 100%;
+}
+
+.subscribe button {
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
 
 /*-------------------------------FOOTER-------------------------------------------*/
 
@@ -226,6 +252,18 @@ body {
     text-decoration: none;
 }
 
+/*-------------SERVICES LOGO SLIDER----------------*/
 
-/* HEADER PASTE */ 
+.background-client {
+    background-color: #fff;
+}
+
+.client-logo {
+    height: 75px;
+    padding: 16px;
+} 
+
+.service-carousel {
+    margin-top: 16px;
+}
 
