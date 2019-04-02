@@ -283,7 +283,6 @@ body {
     background-color: #707070;
     color: white;
     border: none;
-    min-height: 200px;
 }
 
 .card-title {
@@ -300,6 +299,45 @@ body {
     text-decoration: none;
 }
 
+/* -----------LOGO COLLAGE----------------- */ 
+
+#service-logos-col {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px 16px 0px 16px;
+    margin-bottom: 32px; 
+}
+
+@media (max-width: 576px) {
+    #service-logos-col {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count: 3;
+        padding: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    #service-logos-col {
+        -webkit-column-count:4;
+        -moz-column-count:4;
+        column-count:4;
+    }
+}
+
+@media (min-width: 992px) {
+    #service-logos-col {
+        -webkit-column-count:5;
+        -moz-column-count:5;
+        column-count:5;
+    }
+}
+
+.service-logo {
+    padding: 4px 0px;
+    background-color: #fff;
+}
+
 /*---------------CONTACT FORM-------------------*/
 
 .contact-title {
@@ -314,7 +352,7 @@ body {
     margin-bottom: 32px;
 }
 
-.form-row {
+.form-item {
     padding-top: 16px;
 }
 
@@ -344,3 +382,13 @@ body {
     margin-bottom: 8px;
     color: #00ff00;
 }
+
+.contact-list a {
+    color: white;
+}
+
+.contact-list a:hover {
+    color: #ffff00;
+    text-decoration: none;
+}
+
