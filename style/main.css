@@ -20,7 +20,7 @@ body {
 .flat-information > li {
 	display: inline-block;
 	position: relative;
-	margin-right: 25px;
+    margin-right: 25px;
 }
 
 .flat-information > li:before {
@@ -67,6 +67,13 @@ body {
     color: #00ff00;
 }
 
+@media only screen and (max-width: 991px) {
+    .social-links,
+	.flat-information {
+		text-align: center;
+	}
+}
+
 /*-------------------------------NAV BAR-------------------------------------------*/
 
 .nav-wrap {
@@ -77,23 +84,19 @@ body {
     width: 100%;
     max-width: 200px;
     height: auto;
-    /* padding-left: 45px; */
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
+}
 
-/* Add an active class to highlight the current page */
- .active-nav {
-        color: #ffff00;
-        font-weight: bold;
-   }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+.active-nav {
+    color: #ffff00;
+    font-weight: bold;
+}
+
+.topnav a {
     float: right;
     display: block;
     text-align: center;
@@ -102,51 +105,48 @@ body {
     font-size: 17px;
     text-transform: uppercase;
     
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    color: #00ff00;
-  }
-  
+}
 
-  .topnav-item {
+
+.topnav a:hover {
+    color: #00ff00;
+}
+
+.topnav-item {
     color: #f2f2f2; 
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+}
+
+.topnav .icon {
     display: none;
-  }
+}
 
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 770px) {
     .topnav a:not(:first-child) {display: none;} 
     .topnav a.icon {
-      float: right;
-      display: block;
-      color: #ffff00;
-      padding: 42px 18px;
+    float: right;
+    display: block;
+    color: #ffff00;
+    padding: 42px 18px;
     }
     .topnav a {
         padding: 20px 18px;
     }
-  }
-  
+}
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 770px) {
+@media screen and (max-width: 770px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     }
     .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    float: none;
+    display: block;
+    text-align: left;
     }
-  }
+}
 
 
 
@@ -160,13 +160,29 @@ body {
 }
 
 .quote {
+    color: #333;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00ff00;
+    font-weight: bold; 
+    font-size: 3vh;
+    padding-top: 50px;
+}
+
+.quote i {
+    font-weight: normal;
+    color: #ffff00;
+    font-size: 2.5vh;
+}
+
+.head-title {
+    font-size: 4rem;
     font-weight: bold;
-    font-size: 1.50rem;
-    text-shadow:
-   -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-     1px 1px 0 #fff;
+    text-transform: uppercase;
+    color: #ffff00;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00ff00;
+    padding: 60px 16px 0px 16px;
+    letter-spacing: 5px;
 }
 
 /*-------------------------------BODY --------------------------*/
@@ -181,7 +197,15 @@ body {
 }
 
 .text-block {
-   text-align: center; 
+    text-align: center; 
+}
+
+.full-width {
+    background-color: #3D3B3C;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 16px;
 }
 
 
@@ -305,7 +329,6 @@ body {
     background-color: #fff;
     border-radius: 8px;
     padding: 24px 16px 0px 16px;
-    margin-bottom: 32px; 
 }
 
 @media (max-width: 576px) {
@@ -336,6 +359,13 @@ body {
 .service-logo {
     padding: 4px 0px;
     background-color: #fff;
+}
+
+.service-head {
+    padding-bottom: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 4vw;
 }
 
 /*---------------CONTACT FORM-------------------*/
@@ -392,3 +422,38 @@ body {
     text-decoration: none;
 }
 
+.download-link {
+    color: #ffff00;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.download-link:hover {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*-----------------NEWS-------------------*/
+.news-item {
+    margin-bottom: 32px;
+}
+
+.news-text {
+    color: #fff;
+}
+
+.news-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.news-text a {
+    color: #00ff00;
+    text-transform: uppercase;
+}
+
+.news-img {
+    margin-bottom: 8px;
+    width: 100%;
+}
