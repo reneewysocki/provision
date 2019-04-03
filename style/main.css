@@ -361,11 +361,11 @@ body {
     background-color: #fff;
 }
 
-.service-head {
-    padding-bottom: 8px;
+.service-head h1 {
+    font-size: 3vw;
     font-weight: bold;
     color: white;
-    font-size: 4vw;
+    text-align: center;
 }
 
 /*---------------CONTACT FORM-------------------*/
